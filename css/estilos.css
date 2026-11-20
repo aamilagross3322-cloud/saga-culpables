@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f8f3ee;
+    color: #382a2c;
+}
+
+/* NAVEGACIÓN */
+.navbar {
+    background-color: #382329;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #f5d8cf;
+}
+
+.navbar-toggler {
+    border: 1px solid #f5d8cf;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(245,216,207,1)' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+    color: #f8e9e4 !important;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #d9a9a0 !important;
+}
+
+/* INICIO */
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(35, 19, 24, 0.55), rgba(35, 19, 24, 0.65)),
+        url("https://tse3.mm.bing.net/th/id/OIP.XbSfwM31aeITTh008xNoWwHaGa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px 50px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.subtitulo, .etiqueta {
+    color: #a96e70;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero .subtitulo {
+    color: #f4c9bc;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 7vw, 75px);
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: #a96e70;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #814d53;
+    color: white;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 100px 0;
+}
+
+.seccion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    margin: 12px 0 20px;
+}
+
+.texto-intro {
+    max-width: 700px;
+    color: #75686a;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* CARRUSEL */
+.carousel {
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.carousel-item img {
+    height: 480px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.carousel-caption {
+    bottom: 60px;
+}
+
+.carousel-caption h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+}
+
+/* LIBROS */
+.libros {
+    background-color: #eee3dc;
+}
+
+.libro-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.tapa {
+    height: 390px;
+    max-width: 270px;
+    margin: auto;
+    padding: 35px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+
+.tapa:hover {
+    transform: translateY(-8px);
+}
+
+.tapa span {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.tapa h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    text-align: center;
+}
+
+.tapa p {
+    letter-spacing: 2px;
+}
+
+.tapa-uno {
+    background: linear-gradient(145deg, #8d4249, #361d29);
+}
+
+.tapa-dos {
+    background: linear-gradient(145deg, #c18b88, #70434b);
+}
+
+.tapa-tres {
+    background: linear-gradient(145deg, #59414d, #211b29);
+}
+
+.libro-card h4 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.libro-card > p {
+    color: #75686a;
+    line-height: 1.7;
+}
+
+/* AUTORA */
+.autora {
+    background-color: #f8f3ee;
+}
+
+.autora-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.autora p:not(.etiqueta) {
+    line-height: 1.9;
+    color: #75686a;
+}
+
+/* PERSONAJES */
+.personaje {
+    background-color: #eee3dc;
+    padding: 40px;
+    height: 100%;
+    border-bottom: 4px solid #a96e70;
+}
+
+.personaje h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.personaje p {
+    color: #75686a;
+    line-height: 1.8;
+}
+
+/* SEGURIDAD */
+.seguridad {
+    background-color: #e9dcd5;
+}
+
+.seguridad-card {
+    background-color: #f8f3ee;
+    padding: 30px;
+    height: 100%;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.seguridad-card:hover {
+    transform: translateY(-5px);
+}
+
+.seguridad-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.seguridad-card p {
+    color: #75686a;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    background-color: #382329;
+    color: #f8e9e4;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #d7c1bd;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+
+    .seccion {
+        padding: 70px 0;
+    }
+
+    .seccion h2 {
+        font-size: 34px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 26px;
+    }
+
+    .tapa {
+        height: 350px;
+    }
+
+    .autora-img {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .seccion h2 {
+        font-size: 30px;
+    }
+
+    .tapa h3 {
+        font-size: 28px;
+    }
+}
+
+/* ENLACES DE LOS LIBROS */
+.libro-enlace {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.libro-enlace:hover .tapa {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.ver-mas {
+    display: inline-block;
+    margin-top: 12px;
+    color: #8d4249;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.ver-mas:hover {
+    color: #382329;
+}
+
+/* NUEVO DISEÑO DE LOS LIBROS */
+
+.libros {
+    background-color: #f3e9e3;
+}
+
+.encabezado-libros {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.encabezado-libros h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+}
+
+.encabezado-libros > p:last-child {
+    color: #806e6e;
+    line-height: 1.8;
+}
+
+.libro-nuevo {
+    background-color: #fffaf6;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(56, 35, 41, 0.08);
+    transition: 0.35s;
+}
+
+.libro-nuevo:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px rgba(56, 35, 41, 0.15);
+}
+
+.libro-imagen {
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+}
+
+.libro-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.libro-nuevo:hover .libro-imagen img {
+    transform: scale(1.06);
+}
+
+.numero-libro {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-shadow: 0 2px 8px #382329;
+}
+
+.libro-info {
+    padding: 28px;
+}
+
+.libro-orden {
+    color: #a96e70;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.libro-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 12px 0;
+    color: #382329;
+}
+
+.libro-info p {
+    color: #806e6e;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 75px;
+}
+
+.libro-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    border-top: 1px solid #e7d6cf;
+    padding-top: 18px;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #814d53;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.libro-boton:hover {
+    color: #382329;
+}
+
+.libro-boton span {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .libro-imagen {
+        height: 280px;
+    }
+
+    .libro-info p {
+        min-height: auto;
+    }
+}
+
+/* PORTADAS DE LAS PÁGINAS INDIVIDUALES */
+
+.ficha-portada {
+    background: linear-gradient(135deg, #f3e9e3, #e5d2c9);
+    padding: 130px 0 85px;
+}
+
+.portada-libro {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 450px;
+    object-fit: cover;
+    margin: auto;
+    box-shadow: 15px 18px 35px rgba(56, 35, 41, 0.22);
+}
+
+.ficha-portada h1 {
+    font-family: 'Playfair Display', serif;
+    color: #382329;
+    font-size: clamp(45px, 6vw, 75px);
+    margin: 15px 0;
+}
+
+.ficha-portada .autora-nombre {
+    color: #a96e70;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.ficha-portada .col-md-7 > p:last-child {
+    color: #75686a;
+    line-height: 1.9;
+    max-width: 500px;
+}
+
+@media (max-width: 767px) {
+    .ficha-portada {
+        padding: 110px 0 60px;
+        text-align: center;
+    }
+
+    .portada-libro {
+        height: 350px;
+        max-width: 260px;
+    }
+}
